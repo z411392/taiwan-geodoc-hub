@@ -1,0 +1,507 @@
+{
+  "/": {
+    "metadata": {
+      "title": {
+        "default": "Taiwan GeoDoc Hub",
+        "template": "%s | Taiwan GeoDoc Hub"
+      },
+      "description": "Taiwan GeoDoc Hub is a SaaS platform designed for Taiwanese land data, providing land snapshot analysis and announcement value query functions, supporting multi-tenant, multi-role, and point system management."
+    },
+    "roles": {
+      "administrator": "Administrator",
+      "manager": "Manager",
+      "member": "Member"
+    },
+    "statuses": {
+      "tenants": {
+        "pending": "Pending"
+      },
+      "snapshots": {
+        "pending": "Ready",
+        "processing": "Processing",
+        "failed": "Failed",
+        "success": "Success"
+      },
+      "values": {
+        "pending": "Ready",
+        "processing": "Processing",
+        "failed": "Failed",
+        "success": "Success"
+      },
+      "registrations": {
+        "success": "Success",
+        "parsing": "Parsing",
+        "failed": "Failed",
+        "pending": "Pending"
+      }
+    },
+    "types": {
+      "registrations": {
+        "land": "Land",
+        "building": "Building"
+      }
+    },
+    "activities": {
+      "snapshots": {
+        "parse": "Parse Snapshots: {file}",
+        "upload": "Upload Snapshots: {file}"
+      },
+      "values": {
+        "crawl": "Crawl Values: {location}"
+      }
+    },
+    "pagination": "Showing {start} to {end} of {total}",
+    "header": {
+      "app-name": "Taiwan GeoDoc Hub",
+      "back": "Back",
+      "terms-of-use": "Terms of Use",
+      "privacy-policy": "Privacy Policy"
+    },
+    "footer": {
+      "copyright": "© {year} Taiwan GeoDoc Hub. All rights reserved."
+    },
+    "cookie-consent-notice": {
+      "message": "This website uses cookies to improve your browsing experience, analyze website traffic, and provide personalized content. If you continue to use this website, you agree to our use of cookies. Please refer to <PrivacyPolicy>Privacy Policy</PrivacyPolicy> for more information.",
+      "buttons": {
+        "accept": "Accept",
+        "decline": "Decline",
+        "view-details": "View Details",
+        "close": "Close"
+      }
+    },
+    "regions": {
+      "TPE": "Taipei City",
+      "NWT": "New Taipei City"
+    },
+    "errors": {
+      "csrf-token-mismatch": "CSRF token mismatch",
+      "csrf-token-now-found": "CSRF token not found",
+      "invalid-id-token": "Invalid id token"
+    }
+  },
+  "/tenants": {
+    "metadata": {
+      "title": "Select Tenant",
+      "description": "Please select the tenant you want to operate to enter the backend system"
+    },
+    "buttons": {
+      "create-new-tenant": "Create New Tenant",
+      "cancel": "Cancel",
+      "submit": "Submit",
+      "submitting": "Submitting..."
+    },
+    "sections": {
+      "pending": {
+        "title": "Pending Tenants"
+      },
+      "create-new-tenant": {
+        "title": "Create New Tenant",
+        "description": "Please enter the tenant name, and submit it to wait for the system administrator to review.",
+        "inputs": {
+          "name": {
+            "label": "Tenant Name",
+            "placeholder": "Please enter the tenant name"
+          }
+        },
+        "notices": {
+          "tenant-created": "Tenant created successfully! Please wait for the system administrator to review it."
+        }
+      }
+    }
+  },
+  "/auth/sign-in": {
+    "metadata": {
+      "title": "Welcome to Taiwan GeoDoc Hub",
+      "description": "Taiwan GeoDoc Hub is a SaaS platform designed for Taiwanese land data users, providing land snapshot analysis and announcement value query functions, supporting multi-tenant, multi-role, and point system management."
+    },
+    "agreement": "By logging in, you agree to our <TermsOfUse>Terms of Use</TermsOfUse> and <PrivacyPolicy>Privacy Policy</PrivacyPolicy>.",
+    "buttons": {
+      "sign-in-with-google": "Sign in with Google"
+    }
+  },
+  "/privacy-policy": {
+    "metadata": {
+      "title": "Privacy Policy",
+      "description": "Last updated: May 8, 2025"
+    }
+  },
+  "/terms-of-use": {
+    "metadata": {
+      "title": "Terms of Use",
+      "description": "Last updated: May 8, 2025"
+    }
+  },
+  "/tenants/[tenantId]": {
+    "items": {
+      "dashboard": "Dashboard",
+      "snapshots": "Snapshots",
+      "values": "Values",
+      "transactions": "Transactions",
+      "members": "Members"
+    },
+    "buttons": {
+      "sign-out": "Sign Out",
+      "mark-all-as-read": "Mark All as Read",
+      "view-all": "View All"
+    },
+    "sections": {
+      "select-language": {
+        "title": "Select Language"
+      },
+      "notifications": {
+        "title": "Notifications",
+        "notices": {
+          "empty": "No notifications"
+        }
+      }
+    },
+    "notifications": {
+      "snapshot-parsed": {
+        "title": "Snapshot Parsed Successfully",
+        "description": "Your snapshot {file} has been parsed successfully"
+      },
+      "member-joined": {
+        "title": "New Member Joined",
+        "description": "{name} has accepted the invitation and joined your company"
+      },
+      "snapshot-failed": {
+        "title": "Snapshot Parsing Failed",
+        "description": "Your snapshot {file} has failed to parse, please try again"
+      },
+      "copied": {
+        "title": "Copied to Clipboard",
+        "description": "{content} copied"
+      }
+    },
+    "moments": {
+      "just-now": "Just now",
+      "minutes-ago": "{minutes} minutes ago",
+      "hours-ago": "{hours} hours ago",
+      "earlier": "{date}"
+    },
+    "transactions": {
+      "top-up": "Top Up",
+      "use": "Use"
+    }
+  },
+  "/tenants/[tenantId]/dashboard": {
+    "metadata": {
+      "title": "Dashboard",
+      "description": ""
+    },
+    "buttons": {
+      "view-tutorial": "View Tutorial",
+      "contact-customer-service": "Contact Customer Service"
+    },
+    "sections": {
+      "transactions": {
+        "title": "Remaining Points",
+        "description": "Last Top Up: {date}"
+      },
+      "snapshots": {
+        "title": "Snapshot Analysis",
+        "description": "Monthly Snapshots: {count}"
+      },
+      "values": {
+        "title": "Announcement Value Query",
+        "description": "Monthly Queries: {count}"
+      },
+      "members": {
+        "title": "Member Management",
+        "description": "Active Members: {count}"
+      },
+      "quick-start": {
+        "title": "Quick Start Guide",
+        "description": "Learn how to use Taiwan GeoDoc Hub"
+      }
+    },
+    "tutorials": {
+      "snapshots": {
+        "title": "Snapshot Analysis",
+        "description": "Upload PDF format snapshots, the system will automatically parse and convert them to Excel format."
+      },
+      "values": {
+        "title": "Announcement Value Query",
+        "description": "Enter land parcel information to query announcement values."
+      },
+      "top-up": {
+        "title": "Top Up Transactions",
+        "description": "Contact customer service for offline top-up, increasing your point balance."
+      }
+    }
+  },
+  "/tenants/[tenantId]/snapshots": {
+    "metadata": {
+      "title": "Snapshots",
+      "description": "View all snapshot parsing records and statuses"
+    },
+    "buttons": {
+      "export": "Export",
+      "parse": "Parse Snapshot",
+      "confirm": "Confirm",
+      "cancel": "Cancel",
+      "reparse": "Reparse",
+      "upload": "Upload",
+      "select-file": "Select File",
+      "batch-parse": "Batch Parse ({totalPoints})"
+    },
+    "notices": {
+      "confirm-parse-snapshot": {
+        "title": "Confirm Parse Snapshot",
+        "description": "Parsing this snapshot will consume {points} points. Continue?"
+      },
+      "confirm-reparse-snapshot": {
+        "title": "Confirm Reparse Snapshot",
+        "description": "Re-parsing this snapshot will not consume points. Continue?"
+      },
+      "confirm-batch-parse": {
+        "title": "Confirm Batch Parse",
+        "description": "You have selected {selectedItems} snapshots for parsing, which will consume {totalPoints} points. Continue?"
+      }
+    },
+    "sections": {
+      "upload": {
+        "title": "Upload New Snapshot",
+        "description": "Please select a PDF format snapshot file to upload, and the system will automatically parse and convert it to Excel format."
+      },
+      "drag-and-drop": {
+        "title": "Drag and drop file here or click to upload",
+        "description": "Support PDF format, file size not exceed 10MB"
+      }
+    },
+    "filters": {
+      "keyword": {
+        "placeholder": "Search file name..."
+      }
+    },
+    "fields": {
+      "id": "#",
+      "file-name": "File Name",
+      "upload-date": "Upload Date",
+      "file-size": "File Size",
+      "uploader": "Uploader",
+      "actions": "Actions"
+    }
+  },
+  "/tenants/[tenantId]/notifications": {
+    "metadata": {
+      "title": "Notifications",
+      "description": "View all notifications"
+    },
+    "filters": {
+      "severity": {
+        "name": "Severity",
+        "options": {
+          "all": "All",
+          "success": "Success",
+          "warning": "Warning",
+          "error": "Error",
+          "info": "Info"
+        }
+      }
+    },
+    "notices": {
+      "no-notifications": "No notifications"
+    }
+  },
+  "/tenants/[tenantId]/values": {
+    "metadata": {
+      "title": "Values",
+      "description": "Please enter the land parcel number to query the announced value."
+    },
+    "filters": {
+      "region": {
+        "name": "Region",
+        "options": {
+          "all": "All"
+        }
+      },
+      "section": {
+        "name": "Section"
+      },
+      "number": {
+        "placeholder": "Search Parcel Number..."
+      },
+      "status": {
+        "name": "Status",
+        "options": {
+          "all": "All",
+          "success": "Success",
+          "processing": "Processing",
+          "failed": "Failed"
+        }
+      }
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "submit": "Submit",
+      "select-file": "Select File",
+      "reparse": "Reparse",
+      "upload": "Upload",
+      "view": "View",
+      "query": "Query"
+    },
+    "sections": {
+      "drag-and-drop": {
+        "title": "Drag and drop file here or click to upload",
+        "description": "Support XLSX format, file size not exceed 10MB"
+      }
+    },
+    "fields": {
+      "region": "Region",
+      "section": "Section",
+      "number": "Parcel Number",
+      "query-date": "Query Date",
+      "status": "Status",
+      "attempts": "Attempts",
+      "querier": "Querier",
+      "actions": "Actions"
+    }
+  },
+  "/tenants/[tenantId]/transactions": {
+    "metadata": {
+      "title": "Transactions",
+      "description": "View all points history"
+    },
+    "buttons": {
+      "top-up": "Top Up",
+      "close": "Close"
+    },
+    "sections": {
+      "transactions": {
+        "title": "Current Transaction Balance",
+        "description": "Last Updated: {date}"
+      },
+      "this-month": {
+        "title": "This Month Usage",
+        "description": "{year}-{month}"
+      },
+      "this-month-top-up": {
+        "title": "This Month Top Up",
+        "description": "{year}-{month}"
+      },
+      "top-up-plans": {
+        "title": "Top Up Plans",
+        "description": "View our top up plans, please contact customer service for top up"
+      },
+      "current-points-balance": {
+        "title": "Current Point Balance",
+        "description": "{points} points"
+      },
+      "contact-info": {
+        "title": "Contact customer service for top-up."
+      },
+      "point-consumption": {
+        "title": "Point Consumption Reference:",
+        "description": "Snapshot Analysis: 10 points per page<br></br>Announcement Value Query: 10 points per query"
+      },
+      "point-notice": {
+        "title": "Notice:",
+        "description": "Points are limited to the current company and cannot be shared across companies"
+      }
+    },
+    "plan": {
+      "points": "{points} points",
+      "price": "NT$ {price}",
+      "bonus": "Bonus {bonus} points"
+    },
+    "contact-info": {
+      "mobile": "Phone: {mobile}",
+      "email": "Email: {email}",
+      "line-id": "LINE ID: {lineId}"
+    },
+    "filters": {
+      "type": {
+        "name": "Type",
+        "options": {
+          "all": "All",
+          "top-up": "Top Up",
+          "usage": "Usage"
+        }
+      },
+      "search": {
+        "placeholder": "Search Record..."
+      }
+    },
+    "fields": {
+      "date": "Date",
+      "type": "Type",
+      "amount": "Amount",
+      "balance": "Balance",
+      "operator": "Operator"
+    }
+  },
+  "/tenants/[tenantId]/members": {
+    "metadata": {
+      "title": "Members",
+      "description": "View all members"
+    },
+    "fields": {
+      "member": "Member",
+      "role": "Role",
+      "join-date": "Join Date",
+      "last-activity": "Last Activity",
+      "actions": "Actions"
+    },
+    "buttons": {
+      "remove-member": "Remove Member",
+      "cancel": "Cancel",
+      "promote-as-manager": "Promote as Manager",
+      "invite-new-member": "Invite New Member",
+      "send-invitation": "Send Invitation"
+    },
+    "sections": {
+      "remove-member": {
+        "title": "Are you sure you want to remove this member?",
+        "description": "This action cannot be undone. After removal, the member will no longer be able to access company data."
+      },
+      "invite-new-member": {
+        "title": "Invite New Member",
+        "description": "Generate an invitation link and send it to the new member."
+      },
+      "send-invitation": {
+        "title": "Send Invitation",
+        "description": "Enter email address"
+      }
+    }
+  },
+  "/tenants/[tenantId]/snapshots/[snapshotId]/registrations": {
+    "metadata": {
+      "title": "Registrations",
+      "description": "View all registrations"
+    },
+    "sections": {
+      "file-info": {
+        "title": "File Information",
+        "fields": {
+          "filename": "File Name",
+          "upload-date": "Upload Date",
+          "uploader": "Uploader"
+        }
+      },
+      "original": {
+        "title": "Original"
+      },
+      "result": {
+        "title": "Result"
+      }
+    },
+    "buttons": {
+      "batch-parse": "Batch Parse",
+      "export": "Export",
+      "parse": "Parse",
+      "reparse": "Reparse",
+      "show-original": "Show Original",
+      "show-result": "Show Result"
+    },
+    "fields": {
+      "id": "#",
+      "region": "County",
+      "section": "Section",
+      "parcel-type": "Parcel Type",
+      "parcel-number": "Parcel Number",
+      "status": "Status",
+      "actions": "Actions"
+    }
+  }
+}

@@ -1,0 +1,498 @@
+{
+  "/": {
+    "metadata": {
+      "title": {
+        "default": "地政小幫手",
+        "template": "%s | 地政小幫手"
+      },
+      "description": "地政小幫手 GeoDoc Hub 是專為台灣地政資料設計的 SaaS 平台，提供土地謄本解析與公告現值查詢等功能，支援多公司、多角色與點數制管理。"
+    },
+    "roles": {
+      "administrator": "系統管理員",
+      "manager": "公司管理員",
+      "member": "一般使用者"
+    },
+    "statuses": {
+      "tenants": {
+        "pending": "審核中"
+      },
+      "snapshots": {
+        "pending": "就緒",
+        "processing": "處理中",
+        "failed": "失敗",
+        "success": "成功"
+      },
+      "values": {
+        "pending": "就緒",
+        "processing": "處理中",
+        "failed": "失敗",
+        "success": "成功"
+      },
+      "registrations": {
+        "success": "已完成",
+        "parsing": "解析中",
+        "failed": "失敗",
+        "pending": "待解析"
+      }
+    },
+    "types": {
+      "registrations": {
+        "land": "土地",
+        "building": "建物"
+      }
+    },
+    "pagination": "顯示 {start} 至 {end} 筆，共 {total} 筆",
+    "header": {
+      "app-name": "地政小幫手",
+      "back": "返回",
+      "terms-of-use": "使用條款",
+      "privacy-policy": "隱私政策"
+    },
+    "footer": {
+      "copyright": "© {year} 地政小幫手. 版權所有."
+    },
+    "cookie-consent-notice": {
+      "message": "本網站使用 cookies 來改善您的瀏覽體驗、分析網站流量以及提供個性化的內容。如果您繼續使用本網站，即表示您同意我們使用 cookies。請參閱<PrivacyPolicy>隱私政策</PrivacyPolicy>了解更多。",
+      "buttons": {
+        "accept": "接受",
+        "decline": "拒絕",
+        "view-details": "查看詳情",
+        "close": "關閉"
+      }
+    },
+    "regions": {
+      "TPE": "台北市",
+      "NWT": "新北市"
+    },
+    "errors": {
+      "csrf-token-mismatch": "CSRF token 不匹配",
+      "csrf-token-now-found": "必須輸入 CSRF token",
+      "invalid-id-token": "ID token 不合法"
+    }
+  },
+  "/tenants": {
+    "metadata": {
+      "title": "選擇公司",
+      "description": "請選擇您要操作的公司以進入後台系統"
+    },
+    "buttons": {
+      "create-new-tenant": "建立新公司",
+      "cancel": "取消",
+      "submit": "提交申請",
+      "submitting": "提交中..."
+    },
+    "sections": {
+      "pending": {
+        "title": "審核中的公司"
+      },
+      "create-new-tenant": {
+        "title": "建立新公司",
+        "description": "請輸入公司名稱，提交後將等待系統管理員審核。",
+        "inputs": {
+          "name": {
+            "label": "公司名稱",
+            "placeholder": "請輸入完整公司名稱"
+          }
+        },
+        "notices": {
+          "tenant-created": "公司申請已提交，請等待系統管理員審核"
+        }
+      }
+    }
+  },
+  "/auth/sign-in": {
+    "metadata": {
+      "title": "歡迎使用地政小幫手",
+      "description": "專為台灣地政資料使用者設計的 SaaS 後台系統"
+    },
+    "agreement": "登入即表示您同意我們的<TermsOfUse>使用條款</TermsOfUse>和<PrivacyPolicy>隱私政策</PrivacyPolicy>",
+    "buttons": {
+      "sign-in-with-google": "使用 Google 帳號登入"
+    }
+  },
+  "/privacy-policy": {
+    "metadata": {
+      "title": "隱私政策",
+      "description": "最後更新日期：2025-05-08"
+    }
+  },
+  "/terms-of-use": {
+    "metadata": {
+      "title": "使用條款",
+      "description": "最後更新日期：2025-05-08"
+    }
+  },
+  "/tenants/[tenantId]": {
+    "items": {
+      "dashboard": "儀表板",
+      "snapshots": "謄本解析",
+      "values": "公告現值",
+      "transactions": "點數紀錄",
+      "members": "成員管理"
+    },
+    "buttons": {
+      "sign-out": "登出",
+      "mark-all-as-read": "全部標為已讀",
+      "view-all": "查看全部"
+    },
+    "sections": {
+      "select-language": {
+        "title": "選擇語言"
+      },
+      "notifications": {
+        "title": "通知",
+        "notices": {
+          "empty": "目前沒有通知"
+        }
+      }
+    },
+    "notifications": {
+      "snapshot-parsed": {
+        "title": "謄本解析成功",
+        "description": "您的謄本「{file}」已解析完成"
+      },
+      "member-joined": {
+        "title": "有新成員加入",
+        "description": "{name}已接受邀請並加入您的公司"
+      },
+      "snapshot-failed": {
+        "title": "謄本解析失敗",
+        "description": "您的謄本「{file}」解析失敗，請重試"
+      },
+      "copied": {
+        "title": "已複製內容到剪貼簿",
+        "description": "已複製「{content}」"
+      }
+    },
+    "moments": {
+      "just-now": "剛剛",
+      "minutes-ago": "{minutes} 分鐘前",
+      "hours-ago": "{hours} 小時前",
+      "earlier": "{date}"
+    },
+    "transactions": {
+      "top-up": "儲值",
+      "use": "使用"
+    }
+  },
+  "/tenants/[tenantId]/dashboard": {
+    "metadata": {
+      "title": "儀表板",
+      "description": ""
+    },
+    "buttons": {
+      "view-tutorial": "查看教學",
+      "contact-customer-service": "聯絡客服"
+    },
+    "sections": {
+      "transactions": {
+        "title": "剩餘點數",
+        "description": "上次儲值: {date}"
+      },
+      "snapshots": {
+        "title": "謄本解析",
+        "description": "本月已解析: {count}"
+      },
+      "values": {
+        "title": "公告現值查詢",
+        "description": "本月已查詢: {count}"
+      },
+      "members": {
+        "title": "成員管理",
+        "description": "活躍成員: {count}"
+      },
+      "quick-start": {
+        "title": "快速指南",
+        "description": "了解如何使用地政小幫手"
+      }
+    },
+    "tutorials": {
+      "snapshots": {
+        "title": "謄本解析",
+        "description": "上傳PDF格式的謄本，系統將自動解析並轉換為Excel格式。"
+      },
+      "values": {
+        "title": "公告現值查詢",
+        "description": "查詢公告現值"
+      },
+      "top-up": {
+        "title": "儲值點數",
+        "description": "聯繫客服進行線下儲值，增加您的點數餘額。"
+      }
+    }
+  },
+  "/tenants/[tenantId]/snapshots": {
+    "metadata": {
+      "title": "謄本解析",
+      "description": "查看所有謄本解析紀錄與狀態"
+    },
+    "buttons": {
+      "export": "匯出清冊",
+      "parse": "解析謄本",
+      "confirm": "確認",
+      "cancel": "取消",
+      "reparse": "重新解析",
+      "upload": "上傳謄本",
+      "select-file": "選擇檔案",
+      "batch-parse": "批次解析 ({totalPoints})"
+    },
+    "notices": {
+      "confirm-parse-snapshot": {
+        "title": "確認解析謄本",
+        "description": "解析此謄本將消耗 {points} 點數。確定要繼續嗎？"
+      },
+      "confirm-reparse-snapshot": {
+        "title": "確認重新解析謄本",
+        "description": "重新解析此謄本不會消耗點數。確定要繼續嗎？"
+      },
+      "confirm-batch-parse": {
+        "title": "確認批次解析",
+        "description": "您選擇了 {selectedItems} 個謄本進行解析，將消耗 {totalPoints} 點數。確定要繼續嗎？"
+      }
+    },
+    "sections": {
+      "upload": {
+        "title": "上傳謄本",
+        "description": "請選擇要上傳的PDF格式謄本檔案，上傳後系統將自動解析。"
+      },
+      "drag-and-drop": {
+        "title": "拖曳檔案至此處或點擊上傳",
+        "description": "支援 PDF 格式，檔案大小不超過 10MB"
+      }
+    },
+    "filters": {
+      "keyword": {
+        "placeholder": "搜尋檔案名稱..."
+      }
+    },
+    "fields": {
+      "id": "#",
+      "file-name": "檔案名稱",
+      "upload-date": "上傳日期",
+      "file-size": "檔案大小",
+      "uploader": "上傳者",
+      "actions": "操作"
+    }
+  },
+  "/tenants/[tenantId]/notifications": {
+    "metadata": {
+      "title": "通知",
+      "description": "查看系統中的所有活動與通知"
+    },
+    "filters": {
+      "severity": {
+        "name": "嚴重程度",
+        "options": {
+          "all": "全部",
+          "success": "成功",
+          "warning": "警告",
+          "error": "錯誤",
+          "info": "資訊"
+        }
+      }
+    },
+    "notices": {
+      "no-notifications": "目前沒有通知"
+    }
+  },
+  "/tenants/[tenantId]/values": {
+    "metadata": {
+      "title": "公告現值查詢",
+      "description": "請輸入地號資訊進行公告現值查詢"
+    },
+    "filters": {
+      "region": {
+        "name": "縣市",
+        "options": {
+          "all": "全部"
+        }
+      },
+      "section": {
+        "name": "區段"
+      },
+      "number": {
+        "placeholder": "搜尋地段／地號..."
+      },
+      "status": {
+        "name": "查詢狀態",
+        "options": {
+          "all": "全部",
+          "success": "成功",
+          "processing": "處理中",
+          "failed": "失敗"
+        }
+      }
+    },
+    "buttons": {
+      "cancel": "取消",
+      "submit": "查詢",
+      "select-file": "選擇檔案",
+      "reparse": "重新查詢",
+      "upload": "上傳檔案",
+      "view": "查看",
+      "query": "查詢公告現值"
+    },
+    "sections": {
+      "drag-and-drop": {
+        "title": "拖曳檔案至此處或點擊上傳",
+        "description": "支援 XLSX 格式，檔案大小不超過 10MB"
+      }
+    },
+    "fields": {
+      "region": "縣市",
+      "section": "區段",
+      "number": "地號",
+      "query-date": "查詢日期",
+      "status": "狀態",
+      "attempts": "查詢次數",
+      "querier": "查詢者",
+      "actions": "操作"
+    }
+  },
+  "/tenants/[tenantId]/transactions": {
+    "metadata": {
+      "title": "點數紀錄",
+      "description": "查看所有點數紀錄"
+    },
+    "buttons": {
+      "top-up": "儲值點數",
+      "close": "關閉"
+    },
+    "sections": {
+      "transactions": {
+        "title": "目前點數餘額",
+        "description": "最後更新: {date}"
+      },
+      "this-month": {
+        "title": "本月使用點數",
+        "description": "{year} 年 {month} 月"
+      },
+      "this-month-top-up": {
+        "title": "本月儲值點數",
+        "description": "{year} 年 {month} 月"
+      },
+      "top-up-plans": {
+        "title": "點數儲值方案",
+        "description": "查看我們的儲值方案，請聯繫客服進行儲值"
+      },
+      "current-points-balance": {
+        "title": "目前點數餘額",
+        "description": "{points} 點"
+      },
+      "contact-info": {
+        "title": "聯繫客服進行儲值"
+      },
+      "point-consumption": {
+        "title": "點數消耗參考：",
+        "description": "解析謄本每頁 10 點<br></br>公告現值查詢每筆 10 點"
+      },
+      "point-notice": {
+        "title": "注意事項：",
+        "description": "點數僅限於當前公司使用，無法跨公司共享"
+      }
+    },
+    "plan": {
+      "points": "{points} 點",
+      "price": "NT$ {price}",
+      "bonus": "贈送 {bonus} 點"
+    },
+    "contact-info": {
+      "mobile": "電話：{mobile}",
+      "email": "信箱：{email}",
+      "line-id": "LINE ID：{lineId}"
+    },
+    "filters": {
+      "type": {
+        "name": "紀錄類型",
+        "options": {
+          "all": "全部",
+          "top-up": "儲值",
+          "usage": "使用"
+        }
+      },
+      "search": {
+        "placeholder": "搜尋紀錄..."
+      }
+    },
+    "fields": {
+      "date": "日期",
+      "type": "類型",
+      "amount": "點數變動",
+      "balance": "餘額",
+      "operator": "操作人員"
+    }
+  },
+  "/tenants/[tenantId]/members": {
+    "metadata": {
+      "title": "成員管理",
+      "description": "查看所有成員"
+    },
+    "fields": {
+      "member": "成員",
+      "role": "角色",
+      "join-date": "加入日期",
+      "last-activity": "最後活動",
+      "actions": "操作"
+    },
+    "buttons": {
+      "remove-member": "移除成員",
+      "cancel": "取消",
+      "promote-as-manager": "設為管理員",
+      "invite-new-member": "邀請新成員",
+      "send-invitation": "發送邀請"
+    },
+    "sections": {
+      "remove-member": {
+        "title": "確定要移除此成員？",
+        "description": "此操作無法復原。移除後，該成員將無法再存取公司資料。"
+      },
+      "invite-new-member": {
+        "title": "邀請新成員",
+        "description": "產生邀請連結並發送給新成員。"
+      },
+      "send-invitation": {
+        "title": "發送邀請",
+        "description": "輸入電子郵件地址"
+      }
+    }
+  },
+  "/tenants/[tenantId]/snapshots/[snapshotId]/registrations": {
+    "metadata": {
+      "title": "謄本內文解析",
+      "description": "查看標的解析紀錄與狀態"
+    },
+    "sections": {
+      "file-info": {
+        "title": "檔案資訊",
+        "fields": {
+          "filename": "檔案名稱",
+          "upload-date": "上傳日期",
+          "uploader": "上傳者"
+        }
+      },
+      "original": {
+        "title": "原文"
+      },
+      "result": {
+        "title": "解析結果"
+      }
+    },
+    "buttons": {
+      "batch-parse": "批次解析",
+      "export": "匯出全部",
+      "parse": "解析",
+      "reparse": "重新解析",
+      "show-original": "顯示原文",
+      "show-result": "顯示解析結果"
+    },
+    "fields": {
+      "id": "#",
+      "region": "縣市",
+      "section": "區段",
+      "parcel-type": "標的類型",
+      "parcel-number": "標的編號",
+      "status": "解析狀態",
+      "actions": "操作"
+    }
+  }
+}
