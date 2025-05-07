@@ -1,0 +1,164 @@
+{
+  "/": {
+    "metadata": {
+      "title": {
+        "default": "地政小幫手",
+        "template": "%s | 地政小幫手"
+      },
+      "description": "地政小幫手 GeoDoc Hub 是專為台灣地政資料設計的 SaaS 平台，提供土地謄本解析與公告現值查詢等功能，支援多公司、多角色與點數制管理。"
+    },
+    "roles": {
+      "administrator": "系統管理員",
+      "manager": "公司管理員",
+      "user": "一般使用者"
+    },
+    "statuses": {
+      "tenant": {
+        "pending": "審核中"
+      },
+      "activities": {
+        "processing": "處理中",
+        "success": "已完成",
+        "failed": "失敗",
+        "completed": "已完成"
+      }
+    },
+    "activities": {
+      "transcripts": {
+        "parse": "解析謄本：{file}",
+        "upload": "上傳謄本：{file}"
+      },
+      "values": {
+        "crawl": "查詢公告現值：{location}"
+      },
+      "points": {
+        "deposit": "儲值點數：{amount}"
+      }
+    }
+  },
+  "(outer)": {
+    "header": {
+      "app-name": "地政小幫手",
+      "back": "返回",
+      "terms-of-use": "使用條款",
+      "privacy-policy": "隱私政策"
+    },
+    "footer": {
+      "copyright": "© {year} 地政小幫手. 版權所有."
+    },
+    "cookie-consent-notice": {
+      "message": "本網站使用 cookies 來改善您的瀏覽體驗、分析網站流量以及提供個性化的內容。如果您繼續使用本網站，即表示您同意我們使用 cookies。請參閱<PrivacyPolicy>隱私政策</PrivacyPolicy>了解更多。",
+      "buttons": {
+        "accept": "接受",
+        "decline": "拒絕",
+        "view-details": "查看詳情",
+        "close": "關閉"
+      }
+    }
+  },
+  "/tenants": {
+    "metadata": {
+      "title": "選擇公司",
+      "description": "請選擇您要操作的公司以進入後台系統"
+    },
+    "buttons": {
+      "create-new-tenant": "建立新公司",
+      "cancel": "取消",
+      "submit": "提交申請",
+      "submitting": "提交中..."
+    },
+    "sections": {
+      "pending": "審核中的公司"
+    },
+    "forms": {
+      "create-tenant": {
+        "title": "建立新公司",
+        "description": "請輸入公司名稱，提交後將等待系統管理員審核。",
+        "inputs": {
+          "name": {
+            "label": "公司名稱",
+            "placeholder": "請輸入完整公司名稱"
+          }
+        }
+      }
+    },
+    "messages": {
+      "tenant-created": "公司申請已提交，請等待系統管理員審核"
+    }
+  },
+  "/auth/sign-in": {
+    "metadata": {
+      "title": "歡迎使用地政小幫手",
+      "description": "專為台灣地政資料使用者設計的 SaaS 後台系統"
+    },
+    "agreement": "登入即表示您同意我們的<TermsOfUse>使用條款</TermsOfUse>和<PrivacyPolicy>隱私政策</PrivacyPolicy>",
+    "buttons": {
+      "sign-in-with-google": "使用 Google 帳號登入"
+    }
+  },
+  "/privacy-policy": {
+    "metadata": {
+      "title": "隱私政策",
+      "description": "最後更新日期：2025-05-08"
+    }
+  },
+  "/terms-of-use": {
+    "metadata": {
+      "title": "使用條款",
+      "description": "最後更新日期：2025-05-08"
+    }
+  },
+  "/tenants/[tenantId]": {
+    "items": {
+      "dashboard": "儀表板",
+      "transcripts": "謄本解析",
+      "values": "公告現值",
+      "points": "點數紀錄",
+      "members": "成員管理",
+      "settings": "設定"
+    }
+  },
+  "/tenants/[tenantId]/dashboard": {
+    "metadata": {
+      "title": "儀表板",
+      "description": ""
+    },
+    "buttons": {
+      "upload-transcript": "上傳謄本",
+      "crawl-values": "查詢現值",
+      "deposit-points": "儲值點數",
+      "view-tutorial": "查看教學",
+      "contact-customer-service": "聯絡客服"
+    },
+    "infos": {
+      "last-deposit": "上次儲值: {date}",
+      "monthly-transcripts": "本月已解析: {count}",
+      "monthly-values": "本月已查詢: {count}",
+      "members": "活躍成員: {count}",
+      "activities": "您的最近操作記錄",
+      "quick-start": "了解如何使用地政小幫手"
+    },
+    "cards": {
+      "points": "剩餘點數",
+      "transcripts": "謄本解析",
+      "values": "公告現值查詢",
+      "members": "成員管理",
+      "activities": "最近活動",
+      "quick-start": "快速指南"
+    },
+    "tutorials": {
+      "transcripts": {
+        "title": "謄本解析",
+        "description": "上傳PDF格式的謄本，系統將自動解析並轉換為Excel格式。"
+      },
+      "values": {
+        "title": "公告現值查詢",
+        "description": "查詢公告現值"
+      },
+      "deposit-points": {
+        "title": "儲值點數",
+        "description": "聯繫客服進行線下儲值，增加您的點數餘額。"
+      }
+    }
+  }
+}

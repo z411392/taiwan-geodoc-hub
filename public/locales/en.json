@@ -1,0 +1,164 @@
+{
+  "/": {
+    "metadata": {
+      "title": {
+        "default": "Taiwan GeoDoc Hub",
+        "template": "%s | Taiwan GeoDoc Hub"
+      },
+      "description": "Taiwan GeoDoc Hub is a SaaS platform designed for Taiwanese land data, providing land transcript analysis and announcement value query functions, supporting multi-tenant, multi-role, and point system management."
+    },
+    "roles": {
+      "administrator": "Administrator",
+      "manager": "Manager",
+      "user": "User"
+    },
+    "statuses": {
+      "tenant": {
+        "pending": "Pending"
+      },
+      "activities": {
+        "processing": "Processing",
+        "success": "Success",
+        "failed": "Failed",
+        "completed": "Completed"
+      }
+    },
+    "activities": {
+      "transcripts": {
+        "parse": "Parse Transcripts: {file}",
+        "upload": "Upload Transcripts: {file}"
+      },
+      "values": {
+        "crawl": "Crawl Announced Values: {location}"
+      },
+      "points": {
+        "deposit": "Deposit Points: {amount}"
+      }
+    }
+  },
+  "(outer)": {
+    "header": {
+      "app-name": "Taiwan GeoDoc Hub",
+      "back": "Back",
+      "terms-of-use": "Terms of Use",
+      "privacy-policy": "Privacy Policy"
+    },
+    "footer": {
+      "copyright": "© {year} Taiwan GeoDoc Hub. All rights reserved."
+    },
+    "cookie-consent-notice": {
+      "message": "This website uses cookies to improve your browsing experience, analyze website traffic, and provide personalized content. If you continue to use this website, you agree to our use of cookies. Please refer to <PrivacyPolicy>Privacy Policy</PrivacyPolicy> for more information.",
+      "buttons": {
+        "accept": "Accept",
+        "decline": "Decline",
+        "view-details": "View Details",
+        "close": "Close"
+      }
+    }
+  },
+  "/tenants": {
+    "metadata": {
+      "title": "Select Tenant",
+      "description": "Please select the tenant you want to operate to enter the backend system"
+    },
+    "buttons": {
+      "create-new-tenant": "Create New Tenant",
+      "cancel": "Cancel",
+      "submit": "Submit",
+      "submitting": "Submitting..."
+    },
+    "sections": {
+      "pending": "Pending Tenants"
+    },
+    "forms": {
+      "create-tenant": {
+        "title": "Create New Tenant",
+        "description": "Please enter the tenant name, and submit it to wait for the system administrator to review.",
+        "inputs": {
+          "name": {
+            "label": "Tenant Name",
+            "placeholder": "Please enter the tenant name"
+          }
+        }
+      }
+    },
+    "messages": {
+      "tenant-created": "Tenant created successfully! Please wait for the system administrator to review it."
+    }
+  },
+  "/auth/sign-in": {
+    "metadata": {
+      "title": "Welcome to Taiwan GeoDoc Hub",
+      "description": "Taiwan GeoDoc Hub is a SaaS platform designed for Taiwanese land data users, providing land transcript analysis and announcement value query functions, supporting multi-tenant, multi-role, and point system management."
+    },
+    "agreement": "By logging in, you agree to our <TermsOfUse>Terms of Use</TermsOfUse> and <PrivacyPolicy>Privacy Policy</PrivacyPolicy>.",
+    "buttons": {
+      "sign-in-with-google": "Sign in with Google"
+    }
+  },
+  "/privacy-policy": {
+    "metadata": {
+      "title": "Privacy Policy",
+      "description": "Last updated: May 8, 2025"
+    }
+  },
+  "/terms-of-use": {
+    "metadata": {
+      "title": "Terms of Use",
+      "description": "Last updated: May 8, 2025"
+    }
+  },
+  "/tenants/[tenantId]": {
+    "items": {
+      "dashboard": "Dashboard",
+      "transcripts": "Transcripts",
+      "values": "Announcement Values",
+      "points": "Points History",
+      "members": "Members",
+      "settings": "Settings"
+    }
+  },
+  "/tenants/[tenantId]/dashboard": {
+    "metadata": {
+      "title": "Dashboard",
+      "description": ""
+    },
+    "buttons": {
+      "upload-transcript": "Upload Transcript",
+      "crawl-values": "Crawl Values",
+      "deposit-points": "Deposit Points",
+      "view-tutorial": "View Tutorial",
+      "contact-customer-service": "Contact Customer Service"
+    },
+    "infos": {
+      "last-deposit": "Last Deposit: {date}",
+      "monthly-transcripts": "Monthly Transcripts: {count}",
+      "monthly-values": "Monthly Values: {count}",
+      "members": "Active Members: {count}",
+      "activities": "Your recent activity records",
+      "quick-start": "Learn how to use GeoDoc Hub"
+    },
+    "cards": {
+      "points": "Remaining Points",
+      "transcripts": "Transcripts",
+      "values": "Announced Values",
+      "members": "Members",
+      "activities": "Activities",
+      "quick-start": "Quick Start"
+    },
+    "tutorials": {
+      "transcripts": {
+        "title": "Transcripts",
+        "description": "Upload PDF format transcripts, and the system will automatically parse and convert them to Excel format."
+      },
+      "values": {
+        "title": "Announced Values",
+        "description": "Query announced values."
+      },
+      "deposit-points": {
+        "title": "Deposit Points",
+        "description": "Contact customer service for offline deposit, increasing your point balance."
+      }
+    }
+  }
+}
