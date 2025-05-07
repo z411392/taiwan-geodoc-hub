@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "sourceMap": false,
+        "strict": true,
+        "target": "ESNext",
+        "esModuleInterop": true,
+        "rootDir": "..",
+        "baseUrl": "..",
+        "paths": {
+            "@/taiwan-geodoc-hub/*": ["lib/taiwan-geodoc-hub/*"]
+        },
+        "skipLibCheck": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    },
+    "compileOnSave": true,
+    "include": [".", "../lib"]
+}
