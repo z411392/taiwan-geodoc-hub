@@ -1,0 +1,17 @@
+{
+    "dashboard": {
+        "title": "Dashboard"
+    },
+    "snapshots": {
+        "title": "Snapshots"
+    },
+    "values": {
+        "title": "Values"
+    },
+    "transactions": {
+        "title": "Transactions"
+    },
+    "members": {
+        "title": "Members"
+    }
+}

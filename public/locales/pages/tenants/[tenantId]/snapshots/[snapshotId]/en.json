@@ -1,0 +1,41 @@
+{
+    "metadata": {
+        "title": "Snapshots",
+        "description": "View all snapshot parsing records and statuses"
+    },
+    "buttons": {
+        "export": "Export",
+        "parse": "Parse Snapshot",
+        "confirm": "Confirm",
+        "reparse": "Reparse",
+        "select-file": "Select File",
+        "batch-parse": "Batch Parse ({totalPoints})"
+    },
+    "notices": {
+        "confirm-parse-snapshot": {
+            "title": "Confirm Parse Snapshot",
+            "description": "Parsing this snapshot will consume {points} points. Continue?"
+        },
+        "confirm-reparse-snapshot": {
+            "title": "Confirm Reparse Snapshot",
+            "description": "Re-parsing this snapshot will not consume points. Continue?"
+        },
+        "confirm-batch-parse": {
+            "title": "Confirm Batch Parse",
+            "description": "You have selected {selectedItems} snapshots for parsing, which will consume {totalPoints} points. Continue?"
+        }
+    },
+    "filters": {
+        "keyword": {
+            "placeholder": "Search file name..."
+        }
+    },
+    "fields": {
+        "id": "#",
+        "file-name": "File Name",
+        "upload-date": "Upload Date",
+        "file-size": "File Size",
+        "uploader": "Uploader",
+        "actions": "Actions"
+    }
+}

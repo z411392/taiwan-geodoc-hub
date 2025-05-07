@@ -1,0 +1,6 @@
+{
+    "pending": "就緒",
+    "processing": "處理中",
+    "failed": "失敗",
+    "success": "成功"
+}

@@ -1,0 +1,73 @@
+{
+    "metadata": {
+        "title": "點數紀錄",
+        "description": "查看所有點數紀錄"
+    },
+    "buttons": {
+        "top-up": "儲值點數",
+        "close": "關閉"
+    },
+    "sections": {
+        "transactions": {
+            "title": "目前點數餘額",
+            "description": "最後更新: {date}"
+        },
+        "this-month": {
+            "title": "本月使用點數",
+            "description": "{year} 年 {month} 月"
+        },
+        "this-month-top-up": {
+            "title": "本月儲值點數",
+            "description": "{year} 年 {month} 月"
+        },
+        "top-up-plans": {
+            "title": "點數儲值方案",
+            "description": "查看我們的儲值方案，請聯繫客服進行儲值"
+        },
+        "current-points-balance": {
+            "title": "目前點數餘額",
+            "description": "{points} 點"
+        },
+        "contact-info": {
+            "title": "聯繫客服進行儲值"
+        },
+        "point-consumption": {
+            "title": "點數消耗參考：",
+            "description": "解析謄本每頁 10 點<br></br>公告現值查詢每筆 10 點"
+        },
+        "point-notice": {
+            "title": "注意事項：",
+            "description": "點數僅限於當前團隊使用，無法跨團隊共享"
+        }
+    },
+    "plan": {
+        "points": "{points} 點",
+        "price": "NT$ {price}",
+        "bonus": "贈送 {bonus} 點"
+    },
+    "contact-info": {
+        "mobile": "電話：{mobile}",
+        "email": "信箱：{email}",
+        "line-id": "LINE ID：{lineId}"
+    },
+    "filters": {
+        "type": {
+            "name": "紀錄類型",
+            "options": {
+                "all": "全部",
+                "top-up": "儲值",
+                "usage": "使用"
+            }
+        },
+        "search": {
+            "placeholder": "搜尋紀錄..."
+        }
+    },
+    "fields": {
+        "date": "日期",
+        "type": "類型",
+        "amount": "點數變動",
+        "balance": "餘額",
+        "operator": "操作人員"
+    }
+}
