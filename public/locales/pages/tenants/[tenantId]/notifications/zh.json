@@ -1,0 +1,21 @@
+{
+    "metadata": {
+        "title": "通知",
+        "description": "查看系統中的所有活動與通知"
+    },
+    "filters": {
+        "severity": {
+            "name": "嚴重程度",
+            "options": {
+                "all": "全部",
+                "success": "成功",
+                "warning": "警告",
+                "error": "錯誤",
+                "info": "資訊"
+            }
+        }
+    },
+    "notices": {
+        "no-notifications": "目前沒有通知"
+    }
+}

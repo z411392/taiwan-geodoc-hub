@@ -1,0 +1,5 @@
+{
+    "info": "Email: {email}",
+    "title": "Copied email",
+    "description": "Copied {email} to clipboard"
+}

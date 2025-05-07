@@ -1,0 +1,47 @@
+{
+    "metadata": {
+        "title": "Values",
+        "description": "Please enter the land parcel number to query the announced value."
+    },
+    "filters": {
+        "region": {
+            "name": "Region",
+            "options": {
+                "all": "All"
+            }
+        },
+        "section": {
+            "name": "Section"
+        },
+        "number": {
+            "placeholder": "Search Parcel Number..."
+        },
+        "status": {
+            "name": "Status",
+            "options": {
+                "all": "All",
+                "success": "Success",
+                "processing": "Processing",
+                "failed": "Failed"
+            }
+        }
+    },
+    "buttons": {
+        "cancel": "Cancel",
+        "submit": "Submit",
+        "select-file": "Select File",
+        "reparse": "Reparse",
+        "upload": "Upload",
+        "view": "View"
+    },
+    "fields": {
+        "region": "Region",
+        "section": "Section",
+        "number": "Parcel Number",
+        "query-date": "Query Date",
+        "status": "Status",
+        "attempts": "Attempts",
+        "querier": "Querier",
+        "actions": "Actions"
+    }
+}

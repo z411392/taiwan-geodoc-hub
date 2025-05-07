@@ -1,0 +1,5 @@
+{
+    "title": "Snapshot Analysis",
+    "description": "Upload PDF format snapshots, the system will automatically parse and convert them to Excel format.",
+    "get-started": "View Tutorial"
+}

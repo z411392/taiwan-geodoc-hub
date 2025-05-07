@@ -1,0 +1,9 @@
+{
+    "metadata": {
+        "title": {
+            "default": "地政小幫手",
+            "template": "%s | 地政小幫手"
+        },
+        "description": "地政小幫手 GeoDoc Hub 是專為臺灣地政資料設計的 SaaS 平台，提供土地謄本解析與公告現值查詢等功能，支援多團隊、多角色與點數制管理。"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "dashboard": {
+        "title": "儀表板"
+    },
+    "snapshots": {
+        "title": "謄本解析"
+    },
+    "values": {
+        "title": "公告現值"
+    },
+    "transactions": {
+        "title": "點數紀錄"
+    },
+    "members": {
+        "title": "成員管理"
+    }
+}

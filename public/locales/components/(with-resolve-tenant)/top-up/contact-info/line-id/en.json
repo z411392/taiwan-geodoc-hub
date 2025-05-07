@@ -1,0 +1,5 @@
+{
+    "info": "LINE ID: {lineId}",
+    "title": "Copied LINE ID",
+    "description": "Copied {lineId} to clipboard"
+}

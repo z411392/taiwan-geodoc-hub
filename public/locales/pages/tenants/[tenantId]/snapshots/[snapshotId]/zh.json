@@ -1,0 +1,41 @@
+{
+    "metadata": {
+        "title": "謄本解析",
+        "description": "查看所有謄本解析紀錄與狀態"
+    },
+    "buttons": {
+        "export": "匯出清冊",
+        "parse": "解析謄本",
+        "confirm": "確認",
+        "reparse": "重新解析",
+        "select-file": "選擇檔案",
+        "batch-parse": "批次解析 ({totalPoints})"
+    },
+    "notices": {
+        "confirm-parse-snapshot": {
+            "title": "確認解析謄本",
+            "description": "解析此謄本將消耗 {points} 點數。確定要繼續嗎？"
+        },
+        "confirm-reparse-snapshot": {
+            "title": "確認重新解析謄本",
+            "description": "重新解析此謄本不會消耗點數。確定要繼續嗎？"
+        },
+        "confirm-batch-parse": {
+            "title": "確認批次解析",
+            "description": "您選擇了 {selectedItems} 個謄本進行解析，將消耗 {totalPoints} 點數。確定要繼續嗎？"
+        }
+    },
+    "filters": {
+        "keyword": {
+            "placeholder": "搜尋檔案名稱..."
+        }
+    },
+    "fields": {
+        "id": "#",
+        "file-name": "檔案名稱",
+        "upload-date": "上傳日期",
+        "file-size": "檔案大小",
+        "uploader": "上傳者",
+        "actions": "操作"
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "metadata": {
+        "title": "Members",
+        "description": "View all members"
+    },
+    "fields": {
+        "member": "Member",
+        "role": "Role",
+        "join-date": "Join Date",
+        "last-activity": "Last Activity",
+        "actions": "Actions"
+    },
+    "buttons": {
+        "remove-member": "Remove Member",
+        "cancel": "Cancel",
+        "promote-as-manager": "Promote as Manager",
+        "invite-new-member": "Invite New Member",
+        "send-invitation": "Send Invitation"
+    },
+    "sections": {
+        "remove-member": {
+            "title": "Are you sure you want to remove this member?",
+            "description": "This action cannot be undone. After removal, the member will no longer be able to access company data."
+        },
+        "invite-new-member": {
+            "title": "Invite New Member",
+            "description": "Generate an invitation link and send it to the new member."
+        },
+        "send-invitation": {
+            "title": "Send Invitation",
+            "description": "Enter email address"
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "metadata": {
+        "title": "Registrations",
+        "description": "View all registrations"
+    },
+    "sections": {
+        "file-info": {
+            "title": "File Information",
+            "fields": {
+                "filename": "File Name",
+                "upload-date": "Upload Date",
+                "uploader": "Uploader"
+            }
+        },
+        "original": {
+            "title": "Original"
+        },
+        "result": {
+            "title": "Result"
+        }
+    },
+    "buttons": {
+        "batch-parse": "Batch Parse",
+        "export": "Export",
+        "parse": "Parse",
+        "reparse": "Reparse",
+        "show-original": "Show Original",
+        "show-result": "Show Result"
+    },
+    "fields": {
+        "id": "#",
+        "region": "County",
+        "section": "Section",
+        "parcel-type": "Parcel Type",
+        "parcel-number": "Parcel Number",
+        "status": "Status",
+        "actions": "Actions"
+    }
+}

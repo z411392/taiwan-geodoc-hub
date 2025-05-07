@@ -1,0 +1,47 @@
+{
+    "metadata": {
+        "title": "公告現值查詢",
+        "description": "請輸入地號資訊進行公告現值查詢"
+    },
+    "filters": {
+        "region": {
+            "name": "縣市",
+            "options": {
+                "all": "全部"
+            }
+        },
+        "section": {
+            "name": "區段"
+        },
+        "number": {
+            "placeholder": "搜尋地段／地號..."
+        },
+        "status": {
+            "name": "查詢狀態",
+            "options": {
+                "all": "全部",
+                "success": "成功",
+                "processing": "處理中",
+                "failed": "失敗"
+            }
+        }
+    },
+    "buttons": {
+        "cancel": "取消",
+        "submit": "查詢",
+        "select-file": "選擇檔案",
+        "reparse": "重新查詢",
+        "upload": "上傳檔案",
+        "view": "查看"
+    },
+    "fields": {
+        "region": "縣市",
+        "section": "區段",
+        "number": "地號",
+        "query-date": "查詢日期",
+        "status": "狀態",
+        "attempts": "查詢次數",
+        "querier": "查詢者",
+        "actions": "操作"
+    }
+}
