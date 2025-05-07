@@ -1,0 +1,40 @@
+{
+    "metadata": {
+        "title": "點數紀錄",
+        "description": "查看所有點數紀錄"
+    },
+    "sections": {
+        "transactions": {
+            "title": "目前點數餘額",
+            "description": "最後更新: {date}"
+        },
+        "this-month": {
+            "title": "本月使用點數",
+            "description": "{year} 年 {month} 月"
+        },
+        "this-month-top-up": {
+            "title": "本月儲值點數",
+            "description": "{year} 年 {month} 月"
+        }
+    },
+    "filters": {
+        "type": {
+            "name": "紀錄類型",
+            "options": {
+                "all": "全部",
+                "top-up": "儲值",
+                "usage": "使用"
+            }
+        },
+        "search": {
+            "placeholder": "搜尋紀錄..."
+        }
+    },
+    "fields": {
+        "date": "日期",
+        "type": "類型",
+        "amount": "點數變動",
+        "balance": "餘額",
+        "operator": "操作人員"
+    }
+}

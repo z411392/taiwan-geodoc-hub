@@ -1,0 +1,26 @@
+{
+    "tenant": {
+        "created": {
+            "name": "Team Created",
+            "description": "Team {tenantId} Created"
+        },
+        "approved": {
+            "name": "Team Approved",
+            "description": "Team {tenantId} Approved"
+        },
+        "deleted": {
+            "name": "Team Deleted",
+            "description": "Team {tenantId} Deleted"
+        }
+    },
+    "snapshot": {
+        "uploaded": {
+            "name": "Snapshot Uploaded",
+            "description": "Snapshot {snapshotId} Uploaded"
+        },
+        "renamed": {
+            "name": "Snapshot Renamed",
+            "description": "Snapshot {snapshotId} Renamed"
+        }
+    }
+}

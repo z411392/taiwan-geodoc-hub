@@ -1,0 +1,6 @@
+{
+    "info": "顯示 {start} 至 {end} 筆，共 {total} 筆",
+    "prev": "上一頁",
+    "next": "下一頁",
+    "page": "第/頁"
+}

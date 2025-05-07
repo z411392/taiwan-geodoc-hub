@@ -1,0 +1,6 @@
+{
+    "id": "Member",
+    "role": "Role",
+    "last-signed-in-at": "Last Sign In Time",
+    "actions": "Actions"
+}

@@ -1,0 +1,5 @@
+{
+    "points": "{points} points",
+    "price": "NT$ {price}",
+    "bonus": "Bonus {bonus} points"
+}

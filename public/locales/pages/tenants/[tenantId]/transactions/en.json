@@ -1,0 +1,40 @@
+{
+    "metadata": {
+        "title": "Transactions",
+        "description": "View all points history"
+    },
+    "sections": {
+        "transactions": {
+            "title": "Current Transaction Balance",
+            "description": "Last Updated: {date}"
+        },
+        "this-month": {
+            "title": "This Month Usage",
+            "description": "{year}-{month}"
+        },
+        "this-month-top-up": {
+            "title": "This Month Top Up",
+            "description": "{year}-{month}"
+        }
+    },
+    "filters": {
+        "type": {
+            "name": "Type",
+            "options": {
+                "all": "All",
+                "top-up": "Top Up",
+                "usage": "Usage"
+            }
+        },
+        "search": {
+            "placeholder": "Search Record..."
+        }
+    },
+    "fields": {
+        "date": "Date",
+        "type": "Type",
+        "amount": "Amount",
+        "balance": "Balance",
+        "operator": "Operator"
+    }
+}

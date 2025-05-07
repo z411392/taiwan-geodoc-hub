@@ -1,0 +1,21 @@
+{
+    "metadata": {
+        "title": "Notifications",
+        "description": "View all notifications"
+    },
+    "filters": {
+        "severity": {
+            "name": "Severity",
+            "options": {
+                "all": "All",
+                "success": "Success",
+                "warning": "Warning",
+                "error": "Error",
+                "info": "Info"
+            }
+        }
+    },
+    "notices": {
+        "no-notifications": "No notifications"
+    }
+}
