@@ -1,0 +1,39 @@
+{
+    "metadata": {
+        "title": "謄本內文解析",
+        "description": "查看標的解析紀錄與狀態"
+    },
+    "sections": {
+        "file-info": {
+            "title": "檔案資訊",
+            "fields": {
+                "filename": "檔案名稱",
+                "upload-date": "上傳日期",
+                "uploader": "上傳者"
+            }
+        },
+        "original": {
+            "title": "原文"
+        },
+        "result": {
+            "title": "解析結果"
+        }
+    },
+    "buttons": {
+        "batch-parse": "批次解析",
+        "export": "匯出全部",
+        "parse": "解析",
+        "reparse": "重新解析",
+        "show-original": "顯示原文",
+        "show-result": "顯示解析結果"
+    },
+    "fields": {
+        "id": "#",
+        "region": "縣市",
+        "section": "區段",
+        "parcel-type": "標的類型",
+        "parcel-number": "標的編號",
+        "status": "解析狀態",
+        "actions": "操作"
+    }
+}

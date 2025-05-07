@@ -1,0 +1,46 @@
+{
+    "metadata": {
+        "title": "Dashboard",
+        "description": ""
+    },
+    "buttons": {
+        "view-tutorial": "View Tutorial",
+        "contact-customer-service": "Contact Customer Service"
+    },
+    "sections": {
+        "transactions": {
+            "title": "Remaining Points",
+            "description": "Last Top Up: {date}"
+        },
+        "snapshots": {
+            "title": "Snapshot Analysis",
+            "description": "Monthly Snapshots: {count}"
+        },
+        "values": {
+            "title": "Announcement Value Query",
+            "description": "Monthly Queries: {count}"
+        },
+        "members": {
+            "title": "Member Management",
+            "description": "Active Members: {count}"
+        },
+        "quick-start": {
+            "title": "Quick Start Guide",
+            "description": "Learn how to use Taiwan GeoDoc Hub"
+        }
+    },
+    "tutorials": {
+        "snapshots": {
+            "title": "Snapshot Analysis",
+            "description": "Upload PDF format snapshots, the system will automatically parse and convert them to Excel format."
+        },
+        "values": {
+            "title": "Announcement Value Query",
+            "description": "Enter land parcel information to query announcement values."
+        },
+        "top-up": {
+            "title": "Top Up Transactions",
+            "description": "Contact customer service for offline top-up, increasing your point balance."
+        }
+    }
+}

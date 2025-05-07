@@ -1,0 +1,34 @@
+{
+    "metadata": {
+        "title": "成員管理",
+        "description": "查看所有成員"
+    },
+    "fields": {
+        "member": "成員",
+        "role": "角色",
+        "join-date": "加入日期",
+        "last-activity": "最後活動",
+        "actions": "操作"
+    },
+    "buttons": {
+        "remove-member": "移除成員",
+        "cancel": "取消",
+        "promote-as-manager": "設為管理員",
+        "invite-new-member": "邀請新成員",
+        "send-invitation": "發送邀請"
+    },
+    "sections": {
+        "remove-member": {
+            "title": "確定要移除此成員？",
+            "description": "此操作無法復原。移除後，該成員將無法再存取團隊資料。"
+        },
+        "invite-new-member": {
+            "title": "邀請新成員",
+            "description": "產生邀請連結並發送給新成員。"
+        },
+        "send-invitation": {
+            "title": "發送邀請",
+            "description": "輸入電子郵件地址"
+        }
+    }
+}

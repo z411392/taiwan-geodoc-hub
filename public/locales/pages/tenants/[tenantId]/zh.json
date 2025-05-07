@@ -1,0 +1,53 @@
+{
+    "items": {
+        "dashboard": "儀表板",
+        "snapshots": "謄本解析",
+        "values": "公告現值",
+        "transactions": "點數紀錄",
+        "members": "成員管理"
+    },
+    "buttons": {
+        "sign-out": "登出",
+        "mark-all-as-read": "全部標為已讀",
+        "view-all": "查看全部"
+    },
+    "sections": {
+        "select-language": {
+            "title": "選擇語言"
+        },
+        "notifications": {
+            "title": "通知",
+            "notices": {
+                "empty": "目前沒有通知"
+            }
+        }
+    },
+    "notifications": {
+        "snapshot-parsed": {
+            "title": "謄本解析成功",
+            "description": "您的謄本「{file}」已解析完成"
+        },
+        "member-joined": {
+            "title": "有新成員加入",
+            "description": "{name}已接受邀請並加入您的團隊"
+        },
+        "snapshot-failed": {
+            "title": "謄本解析失敗",
+            "description": "您的謄本「{file}」解析失敗，請重試"
+        },
+        "copied": {
+            "title": "已複製內容到剪貼簿",
+            "description": "已複製「{content}」"
+        }
+    },
+    "moments": {
+        "just-now": "剛剛",
+        "minutes-ago": "{minutes} 分鐘前",
+        "hours-ago": "{hours} 小時前",
+        "earlier": "{date}"
+    },
+    "transactions": {
+        "top-up": "儲值",
+        "use": "使用"
+    }
+}

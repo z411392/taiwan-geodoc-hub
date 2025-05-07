@@ -1,0 +1,21 @@
+{
+    "tenant": {
+        "created": {
+            "name": "團隊已建立"
+        },
+        "approved": {
+            "name": "團隊已審核"
+        },
+        "deleted": {
+            "name": "團隊已刪除"
+        }
+    },
+    "snapshot": {
+        "uploaded": {
+            "name": "謄本已上傳"
+        },
+        "renamed": {
+            "name": "謄本已改名"
+        }
+    }
+}

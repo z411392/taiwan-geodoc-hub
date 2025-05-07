@@ -1,0 +1,53 @@
+{
+    "items": {
+        "dashboard": "Dashboard",
+        "snapshots": "Snapshots",
+        "values": "Values",
+        "transactions": "Transactions",
+        "members": "Members"
+    },
+    "buttons": {
+        "sign-out": "Sign Out",
+        "mark-all-as-read": "Mark All as Read",
+        "view-all": "View All"
+    },
+    "sections": {
+        "select-language": {
+            "title": "Select Language"
+        },
+        "notifications": {
+            "title": "Notifications",
+            "notices": {
+                "empty": "No notifications"
+            }
+        }
+    },
+    "notifications": {
+        "snapshot-parsed": {
+            "title": "Snapshot Parsed Successfully",
+            "description": "Your snapshot {file} has been parsed successfully"
+        },
+        "member-joined": {
+            "title": "New Member Joined",
+            "description": "{name} has accepted the invitation and joined your company"
+        },
+        "snapshot-failed": {
+            "title": "Snapshot Parsing Failed",
+            "description": "Your snapshot {file} has failed to parse, please try again"
+        },
+        "copied": {
+            "title": "Copied to Clipboard",
+            "description": "{content} copied"
+        }
+    },
+    "moments": {
+        "just-now": "Just now",
+        "minutes-ago": "{minutes} minutes ago",
+        "hours-ago": "{hours} hours ago",
+        "earlier": "{date}"
+    },
+    "transactions": {
+        "top-up": "Top Up",
+        "use": "Use"
+    }
+}

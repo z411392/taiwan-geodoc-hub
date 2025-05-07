@@ -1,0 +1,21 @@
+{
+    "tenant": {
+        "created": {
+            "name": "Tenant Created"
+        },
+        "approved": {
+            "name": "Tenant Approved"
+        },
+        "deleted": {
+            "name": "Tenant Deleted"
+        }
+    },
+    "snapshot": {
+        "uploaded": {
+            "name": "Snapshot Uploaded"
+        },
+        "renamed": {
+            "name": "Snapshot Renamed"
+        }
+    }
+}

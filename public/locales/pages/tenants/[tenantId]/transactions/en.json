@@ -1,0 +1,73 @@
+{
+    "metadata": {
+        "title": "Transactions",
+        "description": "View all points history"
+    },
+    "buttons": {
+        "top-up": "Top Up",
+        "close": "Close"
+    },
+    "sections": {
+        "transactions": {
+            "title": "Current Transaction Balance",
+            "description": "Last Updated: {date}"
+        },
+        "this-month": {
+            "title": "This Month Usage",
+            "description": "{year}-{month}"
+        },
+        "this-month-top-up": {
+            "title": "This Month Top Up",
+            "description": "{year}-{month}"
+        },
+        "top-up-plans": {
+            "title": "Top Up Plans",
+            "description": "View our top up plans, please contact customer service for top up"
+        },
+        "current-points-balance": {
+            "title": "Current Point Balance",
+            "description": "{points} points"
+        },
+        "contact-info": {
+            "title": "Contact customer service for top-up."
+        },
+        "point-consumption": {
+            "title": "Point Consumption Reference:",
+            "description": "Snapshot Analysis: 10 points per page<br></br>Announcement Value Query: 10 points per query"
+        },
+        "point-notice": {
+            "title": "Notice:",
+            "description": "Points are limited to the current company and cannot be shared across companies"
+        }
+    },
+    "plan": {
+        "points": "{points} points",
+        "price": "NT$ {price}",
+        "bonus": "Bonus {bonus} points"
+    },
+    "contact-info": {
+        "mobile": "Phone: {mobile}",
+        "email": "Email: {email}",
+        "line-id": "LINE ID: {lineId}"
+    },
+    "filters": {
+        "type": {
+            "name": "Type",
+            "options": {
+                "all": "All",
+                "top-up": "Top Up",
+                "usage": "Usage"
+            }
+        },
+        "search": {
+            "placeholder": "Search Record..."
+        }
+    },
+    "fields": {
+        "date": "Date",
+        "type": "Type",
+        "amount": "Amount",
+        "balance": "Balance",
+        "operator": "Operator"
+    }
+}

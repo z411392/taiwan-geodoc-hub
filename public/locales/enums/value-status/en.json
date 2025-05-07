@@ -1,0 +1,6 @@
+{
+    "pending": "Ready",
+    "processing": "Processing",
+    "failed": "Failed",
+    "success": "Success"
+}

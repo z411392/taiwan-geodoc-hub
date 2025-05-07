@@ -1,0 +1,14 @@
+{
+    "metadata": {
+        "title": "Welcome to Taiwan GeoDoc Hub",
+        "description": "Taiwan GeoDoc Hub is a SaaS platform designed for Taiwanese land data users, providing land snapshot analysis and announcement value query functions, supporting multi-tenant, multi-role, and point system management."
+    },
+    "sections": {
+        "form": {
+            "description": "By logging in, you agree to our <TermsOfUse>Terms of Use</TermsOfUse> and <PrivacyPolicy>Privacy Policy</PrivacyPolicy>.",
+            "buttons": {
+                "sign-in-with-google": "Sign in with Google"
+            }
+        }
+    }
+}

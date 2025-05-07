@@ -1,0 +1,9 @@
+{
+    "message": "This website uses cookies to improve your browsing experience, analyze website traffic, and provide personalized content. If you continue to use this website, you agree to our use of cookies. Please refer to <PrivacyPolicy>Privacy Policy</PrivacyPolicy> for more information.",
+    "buttons": {
+        "accept": "Accept",
+        "decline": "Decline",
+        "view-details": "View Details",
+        "close": "Close"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "message": "本網站使用 cookies 來改善您的瀏覽體驗、分析網站流量以及提供個性化的內容。如果您繼續使用本網站，即表示您同意我們使用 cookies。請參閱<PrivacyPolicy>隱私政策</PrivacyPolicy>了解更多。",
+    "buttons": {
+        "accept": "接受",
+        "decline": "拒絕",
+        "view-details": "查看詳情",
+        "close": "關閉"
+    }
+}

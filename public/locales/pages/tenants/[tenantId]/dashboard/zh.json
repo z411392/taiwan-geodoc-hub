@@ -1,0 +1,46 @@
+{
+    "metadata": {
+        "title": "儀表板",
+        "description": ""
+    },
+    "buttons": {
+        "view-tutorial": "查看教學",
+        "contact-customer-service": "聯絡客服"
+    },
+    "sections": {
+        "transactions": {
+            "title": "剩餘點數",
+            "description": "上次儲值: {date}"
+        },
+        "snapshots": {
+            "title": "謄本解析",
+            "description": "本月已解析: {count}"
+        },
+        "values": {
+            "title": "公告現值查詢",
+            "description": "本月已查詢: {count}"
+        },
+        "members": {
+            "title": "成員管理",
+            "description": "活躍成員: {count}"
+        },
+        "quick-start": {
+            "title": "快速指南",
+            "description": "了解如何使用地政小幫手"
+        }
+    },
+    "tutorials": {
+        "snapshots": {
+            "title": "謄本解析",
+            "description": "上傳PDF格式的謄本，系統將自動解析並轉換為Excel格式。"
+        },
+        "values": {
+            "title": "公告現值查詢",
+            "description": "查詢公告現值"
+        },
+        "top-up": {
+            "title": "儲值點數",
+            "description": "聯繫客服進行線下儲值，增加您的點數餘額。"
+        }
+    }
+}

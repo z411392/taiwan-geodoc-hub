@@ -1,0 +1,30 @@
+{
+    "metadata": {
+        "title": "Select Tenant",
+        "description": "Please select the tenant you want to operate to enter the backend system"
+    },
+    "sections": {
+        "pending": {
+            "title": "Pending Tenants"
+        },
+        "create-new-tenant": {
+            "title": "Create New Tenant",
+            "description": "Please enter the tenant name, and submit it to wait for the system administrator to review.",
+            "buttons": {
+                "open-modal": "Create New Tenant",
+                "cancel": "Cancel",
+                "create": "Create",
+                "progressing": "Processing..."
+            },
+            "inputs": {
+                "name": {
+                    "label": "Tenant Name",
+                    "placeholder": "Please enter the tenant name"
+                }
+            },
+            "notices": {
+                "succeeded": "Tenant created successfully! Please wait for the system administrator to review it."
+            }
+        }
+    }
+}
